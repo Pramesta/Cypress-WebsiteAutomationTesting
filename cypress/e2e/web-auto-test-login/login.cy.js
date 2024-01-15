@@ -9,11 +9,11 @@ describe('Verify Login Functionality', () => {
 
     //Custom Command
     it('Verify Success Login', () => {
-        cy.login('email', 'password')
+        cy.login('emaildummy', 'passworddummy')
         cy.wait(500)
     })
     it('Verify Failed Login', () => {
-        cy.login('email', 'password')
+        cy.login('emaildummy', 'passworddummy')
         cy.get('.message-error > div').should('be.visible')
         cy.wait(500)
     })
@@ -22,20 +22,20 @@ describe('Verify Login Functionality', () => {
         cy.wait(500)
     })
     it('Verify Not Registered Login', () => {
-        cy.login('email', 'password')
+        cy.login('emaildummy', 'passworddummy')
         cy.get('.message-error > div').should('be.visible')
         cy.wait(500)
     })
 
     //Page Object Model
     // it('Verify Success Login', () => {
-    //     cy.get(loginPage.email).type('email')
-    //     cy.get(loginPage.password).type('password')
+    //     cy.get(loginPage.email).type('emaildummy')
+    //     cy.get(loginPage.password).type('passworddummy')
     //     loginPage.clickLoginBtn()
     // })
     // it('Verify Failed Login', () => {
-    //     cy.get(loginPage.email).type('email')
-    //     cy.get(loginPage.password).type('password')
+    //     cy.get(loginPage.email).type('emaildummy')
+    //     cy.get(loginPage.password).type('passworddummy')
     //     loginPage.clickLoginBtn()
     //     loginPage.verifyErrorMsg('password incorrect')
     // })
@@ -45,8 +45,8 @@ describe('Verify Login Functionality', () => {
     //     loginPage.clickLoginBtn()
     // })
     // it('Verify Not Registered Login', () => {
-    //     cy.get(loginPage.email).type('email')
-    //     cy.get(loginPage.password).type('password')
+    //     cy.get(loginPage.email).type('emaildummy')
+    //     cy.get(loginPage.password).type('passworddummy')
     //     loginPage.clickLoginBtn()
     // })
 
