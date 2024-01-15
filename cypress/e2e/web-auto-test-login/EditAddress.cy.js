@@ -1,7 +1,7 @@
 describe(' Verify Edit Address Functionality ', () => {
     beforeEach(() => {
       cy.visit('')
-      cy.login('emailtestingpramesta@gmail.com','EmailTesting.123')
+      cy.login('password','email')
       cy.wait(500)
       cy.visit('https://magento.softwaretestingboard.com/customer/account/')
     })
